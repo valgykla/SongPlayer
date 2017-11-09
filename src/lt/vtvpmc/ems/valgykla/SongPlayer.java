@@ -3,10 +3,10 @@ package lt.vtvpmc.ems.valgykla;
 public class SongPlayer {
     private int speed;
     private int milliseconds;
-    Song song;
+    private Song song;
 
     public void setSpeed(int speed) {
-        this.speed = speed;
+        this.speed = 1000/speed;
     }
 
     public void setSong(final Song song) {
@@ -17,7 +17,7 @@ public class SongPlayer {
 
         for (int i = 0; i < song.getLyrics().size(); i++) {
             System.out.println("[" + song.getTitle() + "]" + song.getLyrics().get(i));
-            Pause.duration(1000/speed);
+            Pause.duration(this.speed);
         }
 
     }
