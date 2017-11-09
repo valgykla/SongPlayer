@@ -5,6 +5,8 @@ import java.util.Arrays;
 public class App {
 
     public static void main(String[] args) {
+	int skaicius=0;
+	int greitis=0;
         final Song song = new Song("Yesterday", Arrays.asList("Yesterday all my troubles seemed so far away.",
                 "Now it looks as though they're here to stay.",
                 "Oh, I believe in yesterday.",
@@ -39,13 +41,20 @@ public class App {
 			     "Now I need a place to hide away.2",
 			     "Oh, I believe in yesterday.2",
 			     "Mm mm mm mm mm mm mm2"));
-        final SongPlayer player = new SongPlayer();
-        player.setSong(song);
-        player.setSpeed(1);
-        player.play();
-        player.setSong(song2);
-        player.setSpeed(4);
-        player.play();
+        System.out.println("pasirink daina: \n 1-yesteday \n 2-ysteday2");
+		skaicius=klavetura.nextInt();
+		
+		final SongPlayer player = new SongPlayer();
+		if (skaicius==1) {player.setSong(song);}
+		else if (skaicius==2) {player.setSong(song2);}
+		
+		
+		System.out.println("pasirink greiti nuo 1 iki 5 ");
+		greitis=klavetura.nextInt();
+		
+		
+		player.setSpeed(greitis);
+		player.play();
 
     }
 }
