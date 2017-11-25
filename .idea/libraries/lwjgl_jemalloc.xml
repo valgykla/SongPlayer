@@ -1,11 +1,11 @@
 <component name="libraryTable">
   <library name="lwjgl-jemalloc">
     <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lwjgl-3/lwjgl-jemalloc/lwjgl-jemalloc-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lwjgl-3/lwjgl-jemalloc/lwjgl-jemalloc-natives-macos.jar!/" />
       <root url="jar://$PROJECT_DIR$/lwjgl-3/lwjgl-jemalloc/lwjgl-jemalloc-natives-linux.jar!/" />
       <root url="jar://$PROJECT_DIR$/lwjgl-3/lwjgl-jemalloc/lwjgl-jemalloc.jar!/" />
-      <root url="jar://$PROJECT_DIR$/lwjgl-3/lwjgl-jemalloc/lwjgl-jemalloc-natives-macos.jar!/" />
       <root url="jar://$PROJECT_DIR$/lwjgl-3/lwjgl-jemalloc/lwjgl-jemalloc-natives-windows.jar!/" />
-      <root url="jar://$PROJECT_DIR$/lwjgl-3/lwjgl-jemalloc/lwjgl-jemalloc-sources.jar!/" />
       <root url="jar://$PROJECT_DIR$/lwjgl-3/lwjgl-jemalloc/lwjgl-jemalloc-javadoc.jar!/" />
     </CLASSES>
     <JAVADOC />

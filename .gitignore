@@ -7,3 +7,5 @@ lwjgl-*/
 testcase/
 build/
 .gradle/
+src/main/*
+!src/main/java/

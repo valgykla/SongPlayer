@@ -5,7 +5,7 @@ import java.util.List;
 public class Song {
 
     private String sng;
-    private String work_dir = "";
+    private String work_dir = ""; // Added due to the need for variable to working to dir.
     private List lyr;
 
     public Song(String title, List<String> lyrics)
@@ -14,12 +14,12 @@ public class Song {
         this.sng = title;
     }
 
-    public void setWorkDir(String str)
+    public void setWorkDir(String str) // Added due to the need for variable to working to dir.
     {
         this.work_dir = str;
     }
 
-    public String getWorkDir()
+    public String getWorkDir() // Added due to the need for variable to working to dir.
     {
         return this.work_dir;
     }

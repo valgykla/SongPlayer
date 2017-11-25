@@ -43,7 +43,7 @@ public class SongPlayer
 
         if(alCapabilities.OpenAL10)
         {
-                String sng_file = this.sng.getWorkDir() + this.sng.getTitle() + ".ogg";
+                String sng_file = this.sng.getWorkDir() + this.sng.getTitle() + ".ogg"; // Makes the path to the file.
 
                 stackPush();
                 IntBuffer chanBuff = stackMallocInt(1);
@@ -52,18 +52,19 @@ public class SongPlayer
 
                 ShortBuffer rawAudio = stb_vorbis_decode_filename(sng_file, chanBuff, sampleRateBuff);
 
-                int chnls = chanBuff.get();
-                int smpl_rt = sampleRateBuff.get();
+                int chnls = chanBuff.get();             // Gets chanel data.
+                int smpl_rt = sampleRateBuff.get();     // Gets sample rate.
 
                 stackPop();
                 stackPop();
 
                 int form = -1;
 
-                if (chnls == 1) {
-                    form = AL_FORMAT_MONO16;
+                if (chnls == 1)                 // Checks whether or not it's in mono.
+                {
+                    form = AL_FORMAT_MONO16;    // Sets to mono.
                 } else {
-                    form = AL_FORMAT_STEREO16;
+                    form = AL_FORMAT_STEREO16;  // Sets to stereo.
                 }
 
                 int buff_Point = alGenBuffers();
@@ -78,24 +79,24 @@ public class SongPlayer
 
                 alSourcei(srcPnt, AL_BUFFER, buff_Point);
 
-                alSourcef(srcPnt, AL_PITCH, (this.spd));
-
-                alSourcef(srcPnt, AL_VELOCITY, (this.spd)); //Nightcore/slowmo mode activated
+                alSourcef(srcPnt, AL_PITCH, (this.spd)); //Nightcore/slowmo mode activated
+                alSourcef(srcPnt, AL_VELOCITY, (this.spd)); // TODO: Separate lyric speed from sound velocity and pitch for individual control.
 
                 alSourcePlay(srcPnt);
 
-            } catch (Exception e) {};
+            } catch (Exception e) {}
 
             for(int i=0; i<this.sng.size();i++)
                 {
-                    //if(new String(this.sng.getLyrics(i)).contains("[skip="))
+                    //if(new String(this.sng.getLyrics(i)).contains("[skip=")) // TODO: Add a way to prolong cycles.
                     System.out.println("[" + this.sng.getTitle() + "]: " + this.sng.getLyrics(i));
                     try {
                         short sd = (short) (1000/this.spd); // Can't be that big, right?
-                        TimeUnit.MILLISECONDS.sleep(sd);
+                        TimeUnit.MILLISECONDS.sleep(sd);    // Sleep
                     } catch (InterruptedException e) {}
                 }
 
+            // Cleaners
             alDeleteBuffers(buff_Point);
             alcDestroyContext(context);
             alcCloseDevice(device);
