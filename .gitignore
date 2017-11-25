@@ -1,0 +1,9 @@
+.gitignore~
+.directory
+out/
+lwjgl-*
+lwjgl-*/
+*~
+testcase/
+build/
+.gradle/
