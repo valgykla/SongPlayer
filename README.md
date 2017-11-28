@@ -13,3 +13,8 @@ gradle build
 ### IDE development.
 
 Read how to add LWJGL to IDEA.
+
+### Dev history.
+
+For anyone curious here's github repo on witch I developed this update:
+https://github.com/DopeFishLives/vacl_SongPlayer
