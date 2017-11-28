@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="lwjgl-opencl">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lwjgl-3/lwjgl-opencl/lwjgl-opencl-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lwjgl-3/lwjgl-opencl/lwjgl-opencl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lwjgl-3/lwjgl-opencl/lwjgl-opencl-javadoc.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

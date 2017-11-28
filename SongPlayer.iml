@@ -7,5 +7,39 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="lwjgl1" level="project" />
+    <orderEntry type="library" name="lwjgl-openal1" level="project" />
+    <orderEntry type="library" name="lwjgl-stb1" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lwjgl-3/lwjgl/lwjgl.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/lwjgl-3/lwjgl-stb" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/lwjgl-3/lwjgl-stb" />
+        </SOURCES>
+        <jarDirectory url="file://$MODULE_DIR$/lwjgl-3/lwjgl-stb" recursive="false" />
+        <jarDirectory url="file://$MODULE_DIR$/lwjgl-3/lwjgl-stb" recursive="false" type="SOURCES" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lwjgl-3/lwjgl-openal/lwjgl-openal.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>

@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="lwjgl-yoga">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lwjgl-3/lwjgl-yoga/lwjgl-yoga-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lwjgl-3/lwjgl-yoga/lwjgl-yoga.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lwjgl-3/lwjgl-yoga/lwjgl-yoga-natives-macos.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lwjgl-3/lwjgl-yoga/lwjgl-yoga-natives-linux.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lwjgl-3/lwjgl-yoga/lwjgl-yoga-natives-windows.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lwjgl-3/lwjgl-yoga/lwjgl-yoga-sources.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

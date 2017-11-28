@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="lwjgl-vulkan">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lwjgl-3/lwjgl-vulkan/lwjgl-vulkan-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lwjgl-3/lwjgl-vulkan/lwjgl-vulkan.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lwjgl-3/lwjgl-vulkan/lwjgl-vulkan-javadoc.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

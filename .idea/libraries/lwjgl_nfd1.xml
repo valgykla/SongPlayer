@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="lwjgl-nfd1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lwjgl-3/lwjgl-nfd/lwjgl-nfd-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lwjgl-3/lwjgl-nfd/lwjgl-nfd-natives-windows.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lwjgl-3/lwjgl-nfd/lwjgl-nfd.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lwjgl-3/lwjgl-nfd/lwjgl-nfd-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lwjgl-3/lwjgl-nfd/lwjgl-nfd-natives-macos.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lwjgl-3/lwjgl-nfd/lwjgl-nfd-natives-linux.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
